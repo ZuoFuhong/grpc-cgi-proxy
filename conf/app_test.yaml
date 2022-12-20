@@ -1,0 +1,25 @@
+server:
+  name: grpc-cgi-proxy
+  addr: 127.0.0.1
+  port: 8081
+
+monica:
+  namespace: Test
+  service_name: grpc-cgi-proxy
+  token: c747521f-9136-4c6c-860a-ef863d091b5b
+
+services:
+  - service_name: go_wallet_manage_svr
+    namespace: Production
+    desc: 钱包服务
+    methods:
+      - cgi_path: /cgi-proxy/create_wallet
+        method: GET
+        desc: 创建钱包
+        cmd: CreateWallet
+        timeout: 1000
+      - cgi_path: /cgi-proxy/import_wallet
+        method: POST
+        desc: 创建钱包
+        cmd: ImportWallet
+        timeout: 1000
