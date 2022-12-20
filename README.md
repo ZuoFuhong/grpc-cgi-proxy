@@ -1,6 +1,6 @@
 ## gRPC CGI Proxy
 
-**gRPC CGI Proxy** 是 gRPC 服务透明代理解决方案.
+gRPC CGI Proxy 是 gRPC 透明代理解决方案.
 
 ![gRPC CGI Proxy](./docs/gRPC-CGI-Proxy.jpg)
 
